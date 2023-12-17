@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title>
+        71230970_TUGASHTML
+    </title>
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>
+                Selamat datang di Website Personal Saya!
+            </h1>
+        </header>
+
+        <aside class="sidebar">
+            <img alt="Foto Pribadi" src="FotoPribadi.jpg" width = 400>
+        </aside>
+
+        <main class="content">
+            <h2>Kenalan Dulu Yuk!</h2>
+            <h3>Gregorius Daniel Jodan Perminas</h3>
+            <ul>
+                <li><h4>@greg.daniel_</h4></li>
+                <li><h4>Yogyakarta, Indonesia</h4></li>
+                <li><h4>Duta Wacana Christian University</h4></li>
+            </ul>
+            <h3>Keterampilan Pemrograman</h3>
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+        </main>
+        <button id="colorchange">Ganti Warna Background</button>
+        <footer class="footer">Thank You for Visiting My Web Page</footer>
+    </div>
+    
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["red", "blue", "green", "white"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("colorchange");
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+    </script>
+    
+</body>
+</html>
